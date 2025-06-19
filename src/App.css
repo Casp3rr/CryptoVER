@@ -910,11 +910,13 @@ body {
   }
 
   .card-content {
-    padding: 1.5rem;
+    padding-top: 1.4rem;
+    margin-top: 1rem;
   }
 
   .card-content h3 {
     font-size: 20px;
+    
   }
 
   .footer-links {
@@ -1059,6 +1061,10 @@ body {
   .log, .verify, .log:nth-child(3) {
     display: inline-block;
     vertical-align: middle;
+  }
+   .card-content {
+    
+    margin-top: 1.3rem;
   }
 } 
  .verify {

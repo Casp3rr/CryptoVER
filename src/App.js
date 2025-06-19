@@ -4,8 +4,8 @@ import { useState } from "react"
 import "./App.css"
 import logo from "./Crypto-Digital-Currency-PNG-Photo.png"
 import logo2 from "./svgviewer-png-output.png"
-import verifiedIcon from "./EE392771-C2E3-4225-857B-50D2E184BB25.png"
-import unverifiedIcon from "./D7383145-B7AA-4010-A249-DE0376DE5782.png"
+import verifiedIcon from "./verify.png"
+import unverifiedIcon from "./unverify.png"
 import shield from "./88e5db6f-6777-45de-bf74-015a4d080e31.jpg"
 import phoneIcon from './assets/115cd9e0-a5c2-44ef-b361-9aa8fe7d87b2.jpg'
 import securityIcon from './assets/97e6112d-b71a-44f0-96e5-aee222b50401.jpg'
@@ -45,7 +45,7 @@ const handleVerify = () => {
         return "Email"
       case "Telegram":
         return "Telegram"
-      case "social":
+      case "X":
         return "X"
       
       default:
@@ -201,7 +201,7 @@ const handleVerify = () => {
             <div className="modal-content">
               {/* Icon */}
               <div className="status-icon">
-                <div className={`icon-circle ${isVerified ? "success" : "error"}`}>{isVerified ? <img src={verifiedIcon} width={160} alt='verified'/> :  <img src={unverifiedIcon} width={160} alt='unverified'/> }</div>
+                <div className={` ${isVerified ? "success" : "error"}`}>{isVerified ? <img src={verifiedIcon} width={150}  alt='verified'/> :  <img src={unverifiedIcon} width={150}  alt='unverified'/> }</div>
               </div>
 
               {/* Verification Text */}
